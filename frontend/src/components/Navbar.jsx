@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import menu from '/Menu.png'
-import account from '/Account.png'
+import account3 from '/Account3.jpg'
 
 function Navbar() {
 
@@ -24,9 +24,9 @@ const [isOpen, setIsOpen] = useState(false)
 
       {/* Right - Account */}
       <img
-        src={account}
+        src={account3}
         alt="account"
-        className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform duration-200"
+        className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform duration-200 "
       />
 
 
@@ -64,6 +64,12 @@ const [isOpen, setIsOpen] = useState(false)
             className="text-lg font-semibold text-gray-800 hover:text-blue-900 transition-colors"
           >
             Quiz
+          </a>
+          <a
+            href="#About Us"
+            className="text-lg font-semibold text-gray-800 hover:text-blue-900 transition-colors"
+          >
+            About Us
           </a>
         </nav>
       </div>
