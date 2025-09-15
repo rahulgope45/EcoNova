@@ -2,6 +2,7 @@ import { Droplet, Recycle, TreePine } from "lucide-react";
 import greenbg1 from "/greenbg1.png";
 import greenbg2 from "/greenbg2.png";
 
+
 import FirstCard from "../components/FirstCard";
 
 export default function Home() {

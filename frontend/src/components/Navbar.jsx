@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import menu from '/Menu.png'
+import Doorbell from '/Doorbell.png'
 import account3 from '/Account3.jpg'
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
 
@@ -23,11 +25,21 @@ const [isOpen, setIsOpen] = useState(false)
       </p>
 
       {/* Right - Account */}
-      <img
+      <div className='flex gap-1'>
+        <img 
+        src={Doorbell}
+        alt="account"
+        className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform duration-200  rounded-full object-cover"
+        />
+
+        <img
         src={account3}
         alt="account"
-        className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform duration-200 "
+        className="w-10 h-10 cursor-pointer hover:scale-110 transition-transform duration-200  rounded-full object-cover"
       />
+
+      </div>
+      
 
 
 
@@ -47,24 +59,27 @@ const [isOpen, setIsOpen] = useState(false)
 
         {/* Sidebar content */}
         <nav className="flex flex-col mt-16 space-y-6 px-6">
-          <a
+          <NavLink
             href="#home"
             className="text-lg font-semibold text-gray-800 hover:text-blue-900 transition-colors"
+            to="/"
           >
             Home
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             href="#learn"
             className="text-lg font-semibold text-gray-800 hover:text-blue-900 transition-colors"
+            to="/learn"
           >
             Learn
-          </a>
-          <a
+          </NavLink>
+          <NavLink
             href="#quiz"
             className="text-lg font-semibold text-gray-800 hover:text-blue-900 transition-colors"
+            to='/quiz'
           >
-            Quiz
-          </a>
+            Quiz / Tasks
+          </NavLink>
           <a
             href="#About Us"
             className="text-lg font-semibold text-gray-800 hover:text-blue-900 transition-colors"
