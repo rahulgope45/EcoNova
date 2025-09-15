@@ -10,7 +10,7 @@ import { CheckCircle2 } from "lucide-react";
     "Using reusable bottles",
     "Buying bottled water daily",
     "Throwing plastic in the trash",
-    "Burning plastic waste",
+    "Burning plastic waste", 
   ];
   const correctAnswer = 0;
 

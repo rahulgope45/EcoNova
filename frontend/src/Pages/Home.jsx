@@ -1,4 +1,4 @@
-import { Droplet, Recycle, TreePine } from "lucide-react";
+import { Droplet, Recycle } from "lucide-react";
 import greenbg1 from "/greenbg1.png";
 import greenbg2 from "/greenbg2.png";
 
